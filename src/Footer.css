@@ -1,0 +1,12 @@
+#footerNav li{
+    width:116px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}

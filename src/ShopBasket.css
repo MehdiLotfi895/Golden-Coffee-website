@@ -1,0 +1,25 @@
+#scroolCss::-webkit-scrollbar{
+    width:5px;
+
+}
+
+
+#scroolCss::-webkit-scrollbar-thumb{
+    background-color: rgb(2, 192, 255);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+    outline:none;
+    
+}
+
+#scroolCss::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(2, 137, 255);
+}
+
+
+
+

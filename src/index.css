@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "shabnam";
+  src: url("../public/fonts/Shabnam-FD.woff2");
+}
+ *{
+  font-family: "shabnam";
+}  
+@theme{
+ --breakpoint-break-1:409px;
+ --breakpoint-break-2:622px;
+ --breakpoint-break-3:835px;
+ --breakpoint-break-4:424px;
+ --breakpoint-break-5:500px;
+ --breakpoint-break-6:360px;
+ --color-club:rgb(11, 186, 124);
+ --color-logo-login:#fab869;
+}
+

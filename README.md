@@ -1,16 +1,27 @@
-# React + Vite
+# ☕ پروژه وب‌سایت فروشگاه قهوه (Golden Coffee)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+یک اپلیکیشن فرانت‌اند مدرن و واکنش‌گرا (Responsive) برای یک کافی‌شاپ آنلاین که با تمرکز بر تجربه کاربری (UX) و طراحی زیبا ساخته شده است.
 
-Currently, two official plugins are available:
+## 🚀 ویژگی‌های پروژه:
+* **طراحی کاملاً ریسپانسیو:** بهینه‌سازی شده برای موبایل، تبلت و دسکتاپ.
+* **حالت تاریک و روشن (Dark/Light Mode):** قابلیت تغییر تم با ذخیره‌سازی در LocalStorage.
+* **مدیریت سبد خرید:** امکان اضافه کردن محصولات و مدیریت تعداد آن‌ها.
+* **اسکرول نرم (Smooth Scroll):** استفاده از `useRef` برای پیمایش راحت بین بخش‌های مختلف (درباره ما، وبلاگ و تماس).
+* **طراحی مدرن:** استفاده از Tailwind CSS برای استایل‌دهی سریع و حرفه‌ای.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 تکنولوژی‌های استفاده شده:
+* **React.js** (Library اصلی)
+* **Tailwind CSS** (برای طراحی UI)
+* **React Router Dom** (برای مسیریابی)
+* **JavaScript (ES6+)**
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 نحوه اجرا:
+1. پروژه را کلون کنید:
+   bash
+   git clone https://github.com/username/project-name.git
+   
+2. کتابخانه‌های مورد نیاز را نصب کنید:
+   npm install
+   
+3. پروژه را اجرا کنید:
+   npm run dev

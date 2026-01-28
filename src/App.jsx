@@ -4,7 +4,7 @@ import ShopBasketMobile from "./ShopBasketMobile"
 import Login from "./Login.jsx"
 import MainPage from "./MainPage"
 import { useState ,useRef} from "react"
-import ShoppingNavDesktop from "./ShoppingNavDesktop.jsx"
+import ShoppingNavDesktop from "./ShoppingNavDesktop"
 import "./App.css";
 export default function App() {
   const [dark,setDark]=useState(()=>{
@@ -44,7 +44,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<MainPage dark={dark} setDark={setDark} shoppingList={shoppingList} setShoppingList={setShoppingList} newProducts={newProducts} bestSeller={bestSeller} shopNumber={shopNumber} setShopNumber={setShopNumber} aboutRef={aboutRef} blogsRef={blogsRef} contactRef={contactRef} mainRef={mainRef} scrollToRef={scrollToRef}/>}>
             <Route path="menu" element={<MenuMobile setDark={setDark} aboutRef={aboutRef} blogsRef={blogsRef} contactRef={contactRef} mainRef={mainRef} scrollToRef={scrollToRef}/>}/>  
-            <Route path="shopbasket" element={<ShopBasketMobile shoppingList={shoppingList} setShoppingList={setShoppingList}/>}/>
+            <Route path="shopbasket" element={<ShopBasketMobile shoppingList={shoppingList} setShoppingList={setShoppingList} scrollToRef={scrollToRef} mainRef ={mainRef }/>}/>
             <Route path="shoppingNavDesktop" element={<ShoppingNavDesktop />} />
           </Route>
           <Route path="Login"  element={<Login/>}/>

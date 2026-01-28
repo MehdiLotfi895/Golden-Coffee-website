@@ -3,7 +3,7 @@ export default function CoffeClubForMobile() {
     <div className="w-full flex justify-center ">
     <div className="w-[min(90%,369px)] h-[min(70vw,287px)] my-7 bg-club rounded-xl px-2.5  text-white flex flex-col justify-center break-2:w-143.25 break-3:w-[768.4px] break-3:flex-row break-3:items-center break-3:h-34 break-3:justify-between xl:w-270 xl:pl-10">
        <div className="flex gap-2.5 font-medium ">
-       <img src="./diamond.png" className="w-[min(21vw,86px)] max-h-25"/>
+       <img src="/diamond.png" className="w-[min(21vw,86px)] max-h-25"/>
         <div>
         <div className="text-[min(8vw,33px)]  font-bold xl:text-[40px]">کافی کلاب</div>
         <div className="text-[min(4vw,17px)] break-3:text-[15px] xl:text-[17px]">میدونستی میتونی با امتیاز هات قهوه بگیری؟</div>

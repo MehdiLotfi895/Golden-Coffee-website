@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import {useSearchParams,NavLink } from "react-router-dom"
+import {useSearchParams,NavLink, useNavigate } from "react-router-dom"
 import "./ShopBasket.css"
-export default function ShopBasketMobile({shoppingList,setShoppingList}) {
+export default function ShopBasketMobile({shoppingList,setShoppingList,scrollToRef,mainRef}) {
   const [searchParams,setSearchParams]=useSearchParams();
   let sum=0;
     for(let i=0;i<=shoppingList.length-1;i++)
@@ -10,9 +10,10 @@ export default function ShopBasketMobile({shoppingList,setShoppingList}) {
   useEffect(()=>{
      localStorage.setItem("shoppingList",JSON.stringify(shoppingList));
    },[shoppingList])
+   const Navigate=useNavigate()
   return (
     <>
-     <div className="fixed w-screen h-screen bg-[rgba(0,0,0,0.6)] backdrop-blur-xs z-20 md:hidden">
+     <div className="fixed w-screen h-screen bg-[rgba(0,0,0,0.6)] backdrop-blur-xs z-20 md:hidden" onClick={()=>{Navigate("/")}}>
     </div>
     <div className="hidden w-64 h-20 bg-orange-400 rounded-xl fixed top-[85.5px] z-20 md:left-56 lg:left-66 xl:left-83 md:block">
     </div>
@@ -38,7 +39,7 @@ export default function ShopBasketMobile({shoppingList,setShoppingList}) {
                 <div className="text-xs font-medium">
                   هنوز محصولی به سبد خرید اضافه نشده
                 </div>
-                <button className="text-white  bg-teal-600 px-4 py-3 border-none rounded-[7px] mt-10 text-xs hover:bg-teal-800">
+                <button className="text-white  bg-teal-600 px-4 py-3 border-none rounded-[7px] mt-10 text-xs hover:bg-teal-800" onClick={()=>{Navigate("/");scrollToRef(mainRef)}}>
                    مشاهده صفحه فروشگاه
                 </button>
              </div>

@@ -16,7 +16,8 @@ export default function MobileHeader({dark,setDark,shopNumber,setShopNumber,abou
           }
         </NavLink> 
        <img src="./app-logo-type.svg" alt="site-logo" className={`w-20 ${Hidden}`}/>
-        <NavLink to={`shopbasket?dark=${(dark)?1:0}&logo=${0}`}>
+        <NavLink to={`shopbasket?dark=${(dark)?1:0}&logo=${0}`} className="flex" onClick={()=>{setShopNumber(0)}}>
+        {(shopNumber!=0)?<div className="relative top-3 right-2 w-3 h-3 bg-orange-500 z-30 text-white text-xs text-center rounded-full xl:w-4 xl:h-4 xl:text-sm">{shopNumber}</div>:<></>}
           {
             dark?
             <img src="white-basket.png" alt="baskte" className="w-5 h-5 "/>
@@ -25,7 +26,7 @@ export default function MobileHeader({dark,setDark,shopNumber,setShopNumber,abou
           }
         </NavLink>
     </div>
-    <div className="bg-[url('./headerBgMobile.webp')] w-full h-[calc(100vw/1.94)] bg-contain bg-no-repeat flex flex-col justify-center p-4 mt-14 md:mt-0 md:bg-[url('./headerBgDesktop.webp')] " >
+    <div className="bg-[url('/headerBgMobile.webp')] w-full h-[calc(100vw/1.94)] bg-contain bg-no-repeat flex flex-col justify-center p-4 mt-14 md:mt-0 md:bg-[url('/headerBgDesktop.webp')] " >
     <div className="hidden fixed top-7 right-[5vw] w-[90vw] h-17 bg-[rgba(0,0,0,0.6)] backdrop-blur-xs rounded-2xl  z-10  items-center justify-between px-5 md:flex xl:h-19 xl:px-8" >
     <ul className="flex gap-4 text-white items-center text-sm xl:text-[16px] xl:gap-6">
          <li><img src="./app-logo.png" alt="" className="w-9 xl:w-12"/></li>

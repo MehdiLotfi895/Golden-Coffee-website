@@ -3,11 +3,11 @@ export default function Section({dark}) {
   return (
     <div className="flex flex-col items-center">
         <div className="flex flex-wrap justify-center p-3 gap-6 text-xl text-white break-3:w-[768.4px] break-3:px-0 break-3:justify-between xl:w-270">
-            <div className="w-[min(90vw,377px)] h-[min(45vw,183px)] bg-[url(category-right.png)] bg-cover rounded-xl pt-7 pr-7 bg-center break-2:w-143.25 break-3:w-92 xl:w-132 ">
+            <div className="w-[min(90vw,377px)] h-[min(45vw,183px)] bg-[url(/category-right.png)] bg-cover rounded-xl pt-7 pr-7 bg-center break-2:w-143.25 break-3:w-92 xl:w-132 ">
                <p className="font-bold text-[min(5.5vw,30px)]">انواع قهوه</p>
                <p className="text-[min(5vw,25px)]">ترکیبی و خاص</p>
             </div>
-            <div className="w-[min(90vw,377px)] h-[min(45vw,183px)] bg-[url(category-left.png)] bg-cover rounded-xl pt-7 pr-7 bg-center break-2:w-143.25 break-3:w-92 xl:w-132">
+            <div className="w-[min(90vw,377px)] h-[min(45vw,183px)] bg-[url(/category-left.png)] bg-cover rounded-xl pt-7 pr-7 bg-center break-2:w-143.25 break-3:w-92 xl:w-132">
             <p className="font-bold text-[min(5.5vw,30px)]">پودر های فوری</p>
             <p className="text-[min(5vw,25px)]">نسکافه هات چاکلت  ماسالا</p>
             </div>

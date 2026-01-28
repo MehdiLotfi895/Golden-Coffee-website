@@ -3,7 +3,7 @@ export default function About({aboutRef}) {
     <div className="flex justify-center" ref={ aboutRef }>
     <div className="mt-7 w-full p-3 flex flex-col break-1:w-94.25 break-2:w-143.25 md:flex-row md:items-center md:gap-5 break-3:w-[768.4px] xl:w-270">
         <div className="flex justify-center">
-        <img src="./contact.png" className="w-56 md:w-100" />
+        <img src="/contact.png" className="w-56 md:w-100" />
         </div>
         <div>
         <div className="text-xl font-black mt-7 xl:text-3xl">یکی از بهترین قهوه ها!</div>

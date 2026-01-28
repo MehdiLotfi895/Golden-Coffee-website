@@ -7,11 +7,11 @@ export default function Login() {
     <div className={`w-screen h-screen flex items-center lg:justify-center ${state?"bg-zinc-800":"bg-white"}`}>
     <div className={` w-full flex flex-col justify-center gap-12 px-4 py-8 break-6:gap-14 lg:w-95 lg:border-2 lg:border-stone-200  lg:rounded-xl lg:px-9 `}>
     <button onClick={()=>{Navigate("/")}} className="absolute top-5 right-5 lg:hidden">
-        <img src="flesh.png" alt="" className="w-4 rotate-180"/>
+        <img src="/flesh.png" alt="" className="w-4 rotate-180"/>
     </button>
       <div className="w-full flex items-center gap-2 ">
-        <img src="flesh.png" alt="" className="w-4 rotate-180 hidden lg:block" onClick={()=>{Navigate("/")}}/>
-        <img src="app-logo.png" alt="" className="w-12 break-6:w-14 mr-8"/>
+        <img src="/flesh.png" alt="" className="w-4 rotate-180 hidden lg:block" onClick={()=>{Navigate("/")}}/>
+        <img src="/app-logo.png" alt="" className="w-12 break-6:w-14 mr-8"/>
         <p className="text-logo-login font-bold break-6:text-[18px]">Golden Coffee</p>
       </div>
       <div className="flex flex-col gap-5">

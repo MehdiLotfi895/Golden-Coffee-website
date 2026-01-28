@@ -20,11 +20,13 @@
 * **Deployment:** Netlify
 
 ---
-
-## 🚀 نصب و اجرا (Installation)
-
-برای اجرای پروژه روی سیستم خودتان، مراحل زیر را دنبال کنید:
-
-1. ابتدا مخزن را کلون کنید:
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+## 📦 نحوه اجرا:
+1. پروژه را کلون کنید:
+   bash
+   git clone https://github.com/username/project-name.git
+   
+2. کتابخانه‌های مورد نیاز را نصب کنید:
+   npm install
+   
+3. پروژه را اجرا کنید:
+   npm run dev
